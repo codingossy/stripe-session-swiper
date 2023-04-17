@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;700&family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&family=Oxanium:wght@200;300;400;500;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html{
+    -webkit-tap-highlight-color: transparent;
+  }
+  h1{
+    @apply text-2xl
+  }
+  h2{
+    @apply text-xl
+  }
+  h3, h4{
+    @apply text-xl
+  }
+}
+
+
+@layer components {
+  .pagesMargin{
+    @apply  mt-24 mb-10
+  }
+  section{
+    @apply my-20 container
+  }
+  .section{
+    @apply container my-10
+  }
+  .toggle {
+    @apply fixed top-0 bottom-0 z-30 w-[80%] transition-all ease-in duration-500
+  }
+
+  .btn{
+    @apply p-2 bg-blue-500 rounded-md text-white w-56
+  }
+}
+
+@layer utilities {
+  .filter-none{
+    filter: none;
+  }
+  .pb-safe{
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+
+/*important keys */
+* {
+    scroll-behavior: smooth;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+  font-family: 'Oxanium', sans-serif;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+  html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .bar{
+    -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+  .bar::-webkit-scrollbar{
+    display: none;
+  }
+  .first-image{
+    z-index: 1;
+   }
+   .imgContainer:hover .second-image{
+    z-index: 2;
+   }
+   
+    .animate-container{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
