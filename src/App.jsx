@@ -18,18 +18,6 @@ function App() {
           path: "/",
           element: <Home />,
         },
-        // {
-        //   path: "/addgig",
-        //   element: <Addgig />,
-        // },
-        // {
-        //   path: "/singlegig/:id",
-        //   element: <Singlegig />,
-        // },
-        // {
-        //   path: "/allgigs",
-        //   element: <Allgigs />,
-        // },
       ],
     },
   ]);

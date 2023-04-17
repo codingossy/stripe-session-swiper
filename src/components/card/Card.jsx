@@ -18,7 +18,6 @@ export const Card = ({ item, active, id, handleClick }) => {
             />
             {active !== id ? (
                 <>
-
                 </>
             ) : (
                 <div className="absolute top-10 left-5 p-4 ">
